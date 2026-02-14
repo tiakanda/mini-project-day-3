@@ -3,11 +3,13 @@ function setup() {
   background(mouseY);
 }
 
-function draw() {
-  background(0);
-  
+  function draw() {
   noStroke(0);
-  fill(mouseX)
+  fill(255, mouseX/mouseY)
   circle(mouseX, mouseY, 75)
   
+}
+
+function mousePressed(){
+  background(0);
 }
